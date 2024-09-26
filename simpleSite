@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Papa Liam's Pizza House</title>
+    </head>
+
+    <body style="background-color:bisque ;">
+        <h1>Da best Pizza in town!</h1>
+        <hr>
+        <p>Have you ever felt like 
+            your pizza was slimy, greasy, downright pitiful?
+        Well Liam has news for you, good pizza, good times!
+        Find us on mains treet in Norwood MA!
+        <b>Our Hours:</b>
+        <ul>
+            <li>7-2pm Wednesdays</li>
+            <li>11-3pm Fridays</li>
+        </ul>
+        </p>
+
+        <p>ALl new <u>PICKLE</u> pizza available for just
+        $52.99 extra!</p>
+        <img src="https://i.redd.it/7ph9dsgdq9bb1.jpg"
+        width="400" height="500"><br><br>
+        <hr>
+        <p>
+            That's right folks, that lovely pizza can be yours,
+            for only <b>$9.99!!!</b> An all time deal 
+            on our pies!
+        </p>
+        <hr>
+        <h3>Real Customer Reviews</h3>
+        <p>
+            Stacy: "I have never eaten food this good,
+            I probably will never eat anything again. There'
+            just no point, life has no meaning anymore, I"ve
+            done all that can be done. Thank you Papa Liam"
+        </p>
+        <p>
+            Hunter: "It was pretty good."
+        </p>
+        <p>
+            Lonnie: "Not the best but not the worst,
+            delivery took forever, guy walked here."
+        </p>
+        <p>
+            Gerry: "What the hell even is this?"
+        </p>
+    </body>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+
+    <body style="background-color: #a1b678;">
+        <!--My Liam Greenrgb code : 55,99,55-->
+        <!--For rgba: 55,99,55,.5-->
+        <!--My liam green2 hexcode: #a1b678-->
+        <p style="background-color: aliceblue;">Hello there!</p>
+        <del>THIS IS STRIKETHROUGH TEXT</del><br>
+        <mark>This is highlighted, or marked text!</mark><br>
+        <p>
+            This is a squared number: 16<sup>2</sup>
+            This is a subscript: 128<sub>4</sub>
+        </p>
+
+        <p title="You're the tip of a tool.">Hello there tool!</p>
+
+        <h1 style="border: 6px dashed"> Boarder time!</h1>
+
+        
+    </body>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <!--Let's make a comment.-->
+        <title>Title</title>
+    </head>
+
+    <body style="background-color: burlywood;">
+        <H1>GIANT HEADER!</H1>
+        <hr>
+        <p>new paragraph</p>
+        <hr>
+        <br>Hello<br>
+        <br>Hello<br>
+        <br>Hello<br>
+        <hr>
+        <p style="color: blueviolet;">This text has color.</p>
+        <p><b>This text is bold..</b></p>
+        <p><u>This text is underlined.</u></p>
+        <hr>
+        <!--Ordered list-->
+        <ol>
+            <li>First Item!</li>
+            <li>Second Item!</li>
+            <li>Third Item!</li>
+        </ol>
+        <!--Unordered list-->
+        <ul>
+            <li>Item here!</li>
+            <li>Another one!</li>
+        </ul>
+
+    </body>
+</html>
