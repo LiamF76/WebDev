@@ -1,0 +1,92 @@
+body {
+    background-color: #77dd77;  /* Soft pastel green for a subtle, fresh look */
+    margin: 0;                  /* Remove default browser margins */
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+.btd-title {
+    font-size: 36px;  /* Large title font */
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;       /* Dark gray for a softer look than black */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Makes it look more formal */
+    letter-spacing: 1px;       /* Adds a bit of space between letters */
+    color: white;               /* White text for contrast */
+    background-color: #4CAF50;  /* Green background */
+    padding: 15px;              /* Add space inside the title box */
+    border-radius: 12px;         /* Rounded corners */
+    width: 80%;                 /* Control the width of the title box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.title {
+    font-size: 32px;  /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Question Styling */
+.question {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 120px;         /* Left margin */
+    margin-right: 120px;        /* Right margin */
+    background-color: #FFC4A3;  /* White background for the question box */
+    border-radius: 12px;        /* Rounded corners */
+    padding: 20px;              /* Space inside the box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 80%;                 /* Control the width of the title box */
+}
+
+/* Flexbox Container */
+.container {
+    width: 80%;                 /* Control the width of the title box */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 120px;         /* Left margin */
+    margin-right: 120px;        /* Right margin */
+    padding: 20px;              /* Space inside the box */
+    display: flex;
+    justify-content: space-between;  /* Space between the left and right sections */
+    align-items: flex-start;         /* Align content at the top */
+    gap: 20px;                       /* Optional: space between left and right sections */
+  }
+  
+  /* Left Section */
+  .left {
+    flex: 1;                         /* Take up equal space */
+    background-color: #3D99F6;       /* Soft peach background */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right Section */
+  .right {
+    flex: 1;                         /* Take up equal space */
+    background-color: #3D99F6;       /* Regular green background */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    font-size: 12px;
+    cursor: crosshair;
+    margin-top: 10px;
+    background-color: #8697C4;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    color: #2A2F33;
+}

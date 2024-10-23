@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if not enough space */
+    justify-content: space-between; /* Adjusts spacing to maintain layout even at different screen sizes */
+    align-items: center;
+    max-width: 100%; /* Allows more space for the cards */
+    margin: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Adjusts width to fit 3 cards in one row, accounting for margin */
+    margin: 10px; /* Consistent spacing around cards */
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}

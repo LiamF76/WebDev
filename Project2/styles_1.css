@@ -1,0 +1,133 @@
+/* Global styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0CCB0;
+}
+
+mark {
+    background-color: #B18742;
+    color: black;
+  }
+
+/* Flex container styles */
+.flex-container {
+    display: flex; /* Using flexbox to arrange items in a row THIS ACTIVATES FLEXBOX */
+    justify-content: space-between; /* Puts space between the two cells HOW DO WE ALING THINGS ON THIS ROW */
+    align-items: center; /* Vertically centers the content within the row */
+    background-color: #922C40;
+    padding: 20px;
+    border: 2px solid #1E2640;
+    margin: 20px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+/* Styles for the left cell (title) */
+.left h1 {
+    font-size: 2.5rem; /* Large title */
+    margin: 0;
+}
+
+.left h2 {
+    font-size: 2rem; 
+    margin: 10;
+    color: #B18742;
+}
+
+.middle p {
+    font-size: 1.2rem;
+    max-width: 500px; 
+    margin: 10;
+    color: black;
+}
+
+#middle{
+    background-color: black;
+}
+
+
+/* Styles for the right cell (text) */
+.right p {
+    font-size: 1.2rem;
+    max-width: 500px; /* Limit the width of the text for better readability */
+    margin: 0;
+}
+
+.about-me {
+    background-color: #B97D60;
+    padding: 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if not enough space */
+    justify-content: space-between; /* Adjusts spacing to maintain layout even at different screen sizes */
+    align-items: center;
+    max-width: 100%; /* Allows more space for the cards */
+    margin: 20px;
+    
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Adjusts width to fit 3 cards in one row, accounting for margin */
+    margin: 10px; /* Consistent spacing around cards */
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.box{
+    width: 220px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#box1{
+    background-color: #F3EAC0;
+}
+
+#box2{
+    background-color: #C38370;
+}
+
+#box3{
+    background-color: #DC9750;
+}
+
+button {
+    padding: 20px 60px;
+    font-size: 14px;
+    cursor: crosshair;
+    margin-top: 10px;
+    background-color: #B18742;
+    border-radius: 10px;
+}

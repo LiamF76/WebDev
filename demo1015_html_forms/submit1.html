@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+</head>
+<body>
+    <h1>Form Submission Result</h1>
+
+    <p><strong>Name:</strong> <span id="displayName"></span></p>
+    <p><strong>Password:</strong> <span id="displayPassword"></span></p>
+
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name_sent') || 'No name provided';
+        const password = params.get('password') || 'No password provided';
+
+        document.getElementById('displayName').textContent = name;
+        document.getElementById('displayPassword').textContent = password;
+
+    </script>
+</body>
+</html>

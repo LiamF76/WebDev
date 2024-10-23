@@ -1,0 +1,39 @@
+.flex-container{
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    /* column, column-reverse */
+    justify-content: flex-start;
+    /* flex-start, flex-end, center, space-between, space-around, space-evenly*/
+    border: 5px solid black;
+    height: 90vh; /*vh is viewing height, makes container using 90% of avail viewing height within those boundries*/
+    align-items: flex-end;
+    /* flex-end, center, flex-start*/
+    flex-wrap: wrap;
+    /* wrap-reverse*/
+    align-content: flex-end;
+    /* flex-end, center, space-evenly, space-between*/
+    column-gap: 1em;
+    row-gap: 1em;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 100px;
+}
+
+#box1{
+    background-color: gold;
+}
+
+#box2{
+    background-color: palegreen;
+}
+#box3{
+    background-color: paleturquoise;
+}
+#box4{
+    background-color: palevioletred;
+}

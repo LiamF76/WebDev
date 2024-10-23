@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.flex-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 20px;
+    gap: 30px;
+}
+
+.left h2 {
+    font-size: 2rem; 
+    margin: 10;
+}
+
+.middle p {
+    font-size: 1.2rem;
+    max-width: 500px; 
+    margin: 10;
+}
+
+.right p {
+    font-size: 0.8rem;
+    max-width: 500px; 
+    margin: 10;
+}
+
+#middle{
+    background-color: black;
+}

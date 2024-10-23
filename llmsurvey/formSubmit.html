@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Bloons Tower Defense Blog Fan Survey</title>
+    </head>
+
+    <main>
+    <section class="question">
+        <h1>Form Submission Successful</h1>
+
+        <p><strong>First Game:</strong> <span id="displayFGame"></span></p>
+        <p><strong>Favorite Game:</strong> <span id="displayFavGame"></span></p>
+        <p><strong>Play Frequency:</strong> <span id="displayPlayFreq"></span></p>
+        <p><strong>Last Played:</strong> <span id="displayLastPlay"></span></p>
+        <p><strong>Favorite Primary Monkey:</strong> <span id="displayFavPrimary"></span></p>
+        <p><strong>Heroes Used:</strong> <span id="displayHeroes"></span></p>
+        <p><strong>Favorite Tower and Why:</strong> <span id="displayFavTower"></span></p>
+        <p><strong>Paragon Frequency:</strong> <span id="displayParagon"></span></p>
+        <!-- <p><strong>Game Modes:</strong> <span id="displayGameModes"></span></p> -->
+        <p><strong>Love Bloons:</strong> <span id="displayLoveBloon"></span></p>
+
+        <script>
+            // Function to get query parameters from the URL
+            function getQueryParams() {
+                const params = new URLSearchParams(window.location.search);
+                const checkboxOptions = params.getAll('checkboxOptions'); // Capture all selected heroes
+                const interests = params.getAll('interests'); // Capture all selected gamemodes
+
+                return {
+                    firstGame: params.get('firstGame') || 'Not provided',
+                    favGame: params.get('favGame') || 'Not provided',
+                    datePlayed: params.get('datePlayed') || 'Not provided',
+                    primaryChoice: params.get('primaryChoice') || 'Not provided',     // primary monkey
+                    checkboxOptions: params.get('checkboxOptions') || 'Not provided', // fav tower
+                    paragonOptions: params.get('paragonOptions') || 'Not provided',
+                    // phone: params.get('phone') || 'Not provided',
+                    loveBTD6: params.get('loveBTD6') || 'Not provided',
+                    // Put all 'hereoes' and 'gamemodes' selections into an array and comma separate to
+                    // displayed on submissions page
+                    checkboxOptions: checkboxOptions.length > 0 ? checkboxOptions.join(', ') : 'None selected', // heroes
+                    interests: interests.length > 0 ? interests.join(', ') : 'None selected' // gamemodes
+                };
+            }
+
+            // Display the extracted data
+            const data = getQueryParams();
+            document.getElementById('displayFGame').textContent = data.firstGame;
+            document.getElementById('displayFavGame').textContent = data.favGame;
+            document.getElementById('displayPlayFreq').textContent = data.country;
+            document.getElementById('displayLastPlay').textContent = data.datePlayed;
+            document.getElementById('displayFavPrimary').textContent = data.primaryChoice;
+            document.getElementById('displayHeroes').textContent = data.checkboxOptions;
+            document.getElementById('displayFavTower').textContent = data.textEntry;
+            document.getElementById('displayParagon').textContent = data.paragonOptions;
+            // document.getElementById('displayGameModes').textContent = data.text;
+            document.getElementById('displayLoveBloon').textContent = data.loveBTD6;
+
+        </script>
+    </section>
+</main>
+</body>
+</html>

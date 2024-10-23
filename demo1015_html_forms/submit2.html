@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+</head>
+<body>
+    <h1>Form Submission Successful</h1>
+
+    <p><strong>Name:</strong> <span id="displayName"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    <p><strong>Age:</strong> <span id="displayAge"></span></p>
+    <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+    <p><strong>Country:</strong> <span id="displayCountry"></span></p>
+    <p><strong>Comments:</strong> <span id="displayComments"></span></p>
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get('name') || 'Not provided',
+                email: params.get('email') || 'Not provided',
+                age: params.get('age') || 'Not provided',
+                gender: params.get('gender') || 'Not provided',
+                country: params.get('country') || 'Not provided',
+                comments: params.get('comments') || 'No comments'
+            };
+        }
+
+        // Display the extracted data
+        const data = getQueryParams();
+        document.getElementById('displayName').textContent = data.name;
+        document.getElementById('displayEmail').textContent = data.email;
+        document.getElementById('displayAge').textContent = data.age;
+        document.getElementById('displayGender').textContent = data.gender;
+        document.getElementById('displayCountry').textContent = data.country;
+        document.getElementById('displayComments').textContent = data.comments;
+    </script>
+</body>
+</html>

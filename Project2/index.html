@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam's Promotional Site</title>
+    <link rel="stylesheet" href="styles_1.css">
+    <link rel ="icon" type="image/x-icon" href="favicon.ico"><!--Favicon link code-->
+</head>
+<body>
+    <!--declare nav bar with flex container, put a title and buttons to navigate the site-->
+    <header>
+        <nav>
+            <section class="flex-container">
+                <div class="left">
+                    <h1>Daraan Games</h1>
+                </div>
+                <div class="right">
+                    <h2> 
+                        <button onclick="window.location.href='index.html'">Home Page</button>
+                        <button onclick="window.location.href='about.html'">About Page</button>
+                    </h2>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <!--main section with content-->
+    <main>
+        <!--hero page stating mission-->
+        <section class="flex-container" style="background-image: url(bf910f85e5692a2.png);">
+            <div class="left">
+                <h2>-Our Mission-</h2>
+            </div>
+            <div class="middle">
+                <p><strong>Bringing tabletop roleplay games to children around the world at no cost. 
+                    Through fundraising and donations, you can allow children to engage in the most creative and popular games in history.</strong>
+                </p>
+            </div>
+        </section>
+
+        <!--about me section-->
+        <section class="about-me">
+            <h2 style="text-align: center;">About Us</h2>
+            <p>So how do we do it? By accepting donations from generous members of the community like yourself. We accept:
+                <li>Guidebooks and supplementary resources</li>
+                <li>Miniatures & Battlemaps</li>
+                <li>Dice (you can never have enough!)</li>
+                <li>And anything else tabletop related!</li>
+            </p>
+        </section>
+
+        <!--3 flexbox section-->
+        <section class="flex-container">
+            <div class="box" id="box1">#1 Provider of TTRPG resources to kids in the entire galaxy.</div>
+            <div class="box" id="box2">Forbes: "Most Ethical Business" from 2023-2024</div>
+            <div class="box" id="box3">100% Carbon Netural</div>
+        </section>
+    </main>
+</body>
+</html>

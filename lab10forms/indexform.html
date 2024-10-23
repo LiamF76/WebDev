@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Lab 10</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel ="icon" type="image/x-icon" href="icons8-cat-48.png"><!--Favicon link code-->
+</head>
+
+<body>
+    <section class="contact">
+        <h1>Daraan Games Contact Form</h1>
+
+    <h5>Please complete the form below so we can contact you with information 
+        to proceed with your donation/volunteering here at Daraan Games, thank you!</h5>
+
+    <form action="submission1.html" method="GET" id="demoForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your Phone #">
+        <br><br>
+
+        <!--
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required>
+        <br><br>
+        -->
+
+        <p>Donation type: (if applicable)</p>
+        <input type="checkbox" id="Books" name="donationType" value="Books">
+        <label for="Books">Books</label><br>
+        <input type="checkbox" id="Dice" name="donationType" value="Dice">
+        <label for="Dice">Dice</label><br>
+        <input type="checkbox" id="other" name="donationType" value="other">
+        <label for="other">Other</label><br><br>
+
+        <p>Select your interests: (if applicable)</p>
+        <input type="checkbox" id="volunteerGM" name="interests" value="volunteerGM">
+        <label for="volunteerGM">Volunteer Game Master</label><br>
+        <input type="checkbox" id="lunchSerivce" name="interests" value="lunchSerivce">
+        <label for="lunchSerivce">Lunch Server</label><br>
+        <input type="checkbox" id="stocking" name="interests" value="stocking">
+        <label for="stocking">Working Inventory</label><br><br>
+
+        <p>Have you worked with children previously?:</p>
+        <input type="radio" id="experienceYes" name="experience" value="experienceYes">
+        <label for="experienceyes">Yes</label><br>
+        <input type="radio" id="experienceNo" name="experience" value="experienceNo">
+        <label for="experienceNo">No</label><br>
+
+        <label for="country">Choose your country: (Currently we only operate in the US and Canada)</label>
+        <select id="country" name="country">
+            <option value="us" style="color: #2A2F33;">United States</option>
+            <option value="ca" style="color: #2A2F33;">Canada</option>
+        </select>
+        <br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    </section>
+</body>
+
+</html>

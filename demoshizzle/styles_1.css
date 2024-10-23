@@ -1,0 +1,31 @@
+/* Global styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Flex container styles */
+.flex-container {
+    display: flex; /* Using flexbox to arrange items in a row THIS ACTIVATES FLEXBOX */
+    justify-content: space-between; /* Puts space between the two cells HOW DO WE ALING THINGS ON THIS ROW */
+    align-items: center; /* Vertically centers the content within the row */
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 20px;
+}
+
+/* Styles for the left cell (title) */
+.left h1 {
+    font-size: 2.5rem; /* Large title */
+    margin: 0;
+}
+
+/* Styles for the right cell (text) */
+.right p {
+    font-size: 1.2rem;
+    max-width: 500px; /* Limit the width of the text for better readability */
+    margin: 0;
+}
