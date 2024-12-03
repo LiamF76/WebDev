@@ -1,0 +1,29 @@
+/* Flexbox Container */
+.container {
+    width: 80%;                 /* Control the width of the title box */
+    margin-top: 0px;
+    margin-bottom: -80px;
+    margin-left: 300px;         /* Left margin */
+    margin-right: 300px;        /* Right margin */
+    padding: 20px;              /* Space inside the box */
+    display: flex;
+    justify-content: space-between;  /* Space between the left and right sections */
+    align-items: flex-start;         /* Align content at the top */
+    gap: 20px;                       /* Optional: space between left and right sections */
+  }
+
+h2 {
+   font-family: 'Courier New', Courier, monospace;
+    color: #013220;
+}
+
+button {
+  font-size: 60px;
+  cursor: crosshair;
+  margin-top: 10px;
+  background-color: #8697C4;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  color: #2A2F33;
+}
